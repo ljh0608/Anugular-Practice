@@ -1,0 +1,30 @@
+/* .input-group-append>button{
+    background-color: blue;
+} */
+
+button{
+    background-color: blueviolet;
+    color: cornflowerblue;
+    border-radius: 10px ;
+}
+
+a.btn{
+    background-color: blueviolet;
+    color: cornflowerblue;
+    border-radius: 10px;
+    /* padding: 1rem; */
+    font-size: 1.2rem;
+    position:relative;
+    left:10px;
+    top:10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    /* text-align: left; */
+    width:7%;
+}
+
+a.btn:hover{
+    background-color:#3f525c;
+    color:#fff;
+}
