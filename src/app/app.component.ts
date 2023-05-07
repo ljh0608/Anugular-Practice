@@ -7,5 +7,5 @@ import { TutorialAddComponent } from './tutorial/tutorial-add/tutorial-add.compo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-frontend';
+  title = 'angular-post-exam';
 }

@@ -3,21 +3,21 @@
 <h2>Search</h2>
 <div class="list row">
     <div class="col-md-8">
-        <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Please enter search ID"
+        <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Please enter search Post ID"
                 [(ngModel)]="ID" />
             <div class="input-group-append"> <button class="btn btn-outline-secondary" type="button"
-                   routerLink="/tutorial/{{ID}}">ID Search</button> </div>
+                   routerLink="/tutorial/{{ID}}">Search</button> </div>
         </div>
 
     </div>
 
     <!-- Title search-->
     <div class="col-md-8">
-        <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Please enter search keyword"
+        <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Please enter search Title"
                 [(ngModel)]="keyword" />
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button"
-               (click)="searchTutorial()" >Search!</button></div>
+               (click)="searchTutorial()" >Search</button></div>
 
             </div>
 

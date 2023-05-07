@@ -4,13 +4,13 @@
 
 button{
     background-color: blueviolet;
-    color: cornflowerblue;
+    color: #fff;
     border-radius: 10px ;
 }
 
 a.btn{
     background-color: blueviolet;
-    color: cornflowerblue;
+    color: #fff;
     border-radius: 10px;
     /* padding: 1rem; */
     font-size: 1.2rem;
