@@ -1,0 +1,60 @@
+<!-- ID를 통한 검색 버튼 -->
+<!-- git test -->
+<h2>Search</h2>
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please enter search Post ID"
+        [(ngModel)]="ID"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          routerLink="/tutorial/{{ ID }}"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Title search-->
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please enter search Title"
+        [(ngModel)]="keyword"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="searchTutorial()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <h2>Tutorial List</h2>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let tutorial of tutorialList"
+        routerLink="/tutorial/{{ tutorial.id }}"
+      >
+        {{ tutorial.title }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<a class="btn" routerLink="/tutorial/add">Add</a>
